@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora v1</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+   <div class="contenedor">
+    
+       <div class="calculadora">
+           <button onclick="alert('CERRADO jaja')" class="botonCerrar">X</button>
+           <input 
+           type="text" 
+           placeholder="0" 
+           id="mostrarPantalla" 
+           class="numeros"
+           pattern="^[\d]$">
+           <span id="botones" onclick="limpiar()">CL</span>
+           <span id="botones" onclick="borrar()">DEL</span>
+           <span id="botones" onclick="pantalla('%')">%</span>
+           <span id="botones" onclick="pantalla('/')">/</span>
+           <span id="botones" onclick="pantalla('7')">7</span>
+           <span id="botones" onclick="pantalla('8')">8</span>
+           <span id="botones" onclick="pantalla('9')">9</span>
+           <span id="botones" onclick="pantalla('*')">x</span>
+           <span id="botones" onclick="pantalla('4')">4</span>
+           <span id="botones" onclick="pantalla('5')">5</span>
+           <span id="botones" onclick="pantalla('6')">6</span>
+           <span id="botones" onclick="pantalla('-')"> - </span>
+           <span id="botones" onclick="pantalla('1')">1</span>
+           <span id="botones" onclick="pantalla('2')">2</span>
+           <span id="botones" onclick="pantalla('3')">3</span>
+           <span id="botones" onclick="pantalla('+')">+</span>
+           <span id="botones" onclick="pantalla('.')">.</span>
+           <span id="botones" onclick="pantalla('0')">0</span>
+           <span id="botones" onclick="calculadora()" class="igual">=</span>
+
+       </div>
+               
+    </div>
+
+    
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="app.js"></script>
+    
+
+    
+</body>
+</html>
